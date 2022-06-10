@@ -1,17 +1,17 @@
 package main
 
-import "fmt"
+import (
+	"container/list"
+	"fmt"
+)
 
 func main() {
-
-	for i := 0; i < 3; i++ {
-		text("s")
-		fmt.Print("hhhh")
-	}
-
-	// text("What")
-	// fmt.Print("hhhh")
+	var name string = "afshin"
+	age := 45
+	age = 90
+	text(age, name)
 }
-func text(t string) {
-	fmt.Print(t, "444")
+func text(age int, name string) {
+	fmt.Print(age, name)
+	list.New().PushFront(41)
 }
