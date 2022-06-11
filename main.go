@@ -3,19 +3,18 @@ package main
 import (
 	"container/list"
 	"fmt"
-	"time"
 
-	"github.com/jalaali/go-jalaali"
+	mydate "myApp/data"
 )
 
 func main() {
 	var name string = "afshin"
 	age := 45
 	age = 90
-	text(age, name)
-	fmt.Print(jalaali.ToJalaali(time.Now().Date()))
+	text(age, name, lastName, mydate.N)
+
 }
-func text(age int, name string) {
-	fmt.Print(age, name)
+func text(age int, name string, lastName string, n string) {
+	fmt.Print(age, name, lastName, n)
 	list.New().PushFront(41)
 }
